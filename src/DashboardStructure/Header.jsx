@@ -3,7 +3,8 @@ import { useState } from "react"
 
 const Header = ({data}) => {
   // const [username,setUsername] = useState('')
-  // console.log(data)
+  console.log(data)
+
 
   // if(!data){
   //   setUsername('Admin')
@@ -16,10 +17,10 @@ const Header = ({data}) => {
   }
   return (
     <div className='flex justify-between items-end'>
-      <h1 className='text-2xl font-medium'>
+      <h1 className='text-2xl font-medium text-white'>
          Hello 
          <br /> 
-         <span className='text-3xl font-semibold'>username 👋</span> 
+         <span className='text-3xl font-semibold'> 👋</span> 
           </h1>
       <button
       onClick={logoutUser}
