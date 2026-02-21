@@ -1,35 +1,25 @@
-import { useState } from "react"
+import React from 'react'
 
-
-const Header = (props) => {
-  // const [username,setUsername] = useState('')
-  // console.log(data)
-
-
-  // if(!data){
-  //   setUsername('Admin')
-  // }else{
-  //   setUsername(data.firstname)
-  // }
-  // console.log(props.changeUser)
-
-  const logoutUser = ()=>{
+const Header = ({ changeUser, data }) => {
+  const logoutUser = () => {
     localStorage.removeItem('loggedInUser')
-    props.changeUser('')
-    // window.location.reload()
+    changeUser('')
   }
-  
+
   return (
-    <div className='flex justify-between items-end'>
+    <div className='flex justify-between items-center'>
       <h1 className='text-2xl font-medium text-white'>
-         Hello 
-         <br /> 
-         <span className='text-3xl font-semibold'> 👋</span> 
-          </h1>
+        Hello <br />
+        <span className='text-3xl font-semibold'>
+          {data ? data.firstname : 'Admin'} 👋
+        </span>
+      </h1>
       <button
-      onClick={logoutUser}
-      className='bg-red-500 text-white text-lg font-medium px-3 py-2 rounded-sm ' 
-      >Log Out</button>
+        onClick={logoutUser}
+        className='bg-red-500 text-white text-lg font-medium px-3 py-2 rounded-sm hover:bg-red-600 transition'
+      >
+        Log Out
+      </button>
     </div>
   )
 }
