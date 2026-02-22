@@ -69,7 +69,7 @@ const TaskList = ({ data, setData }) => {
   const completedTasks = data?.tasks?.filter(t => t.completed === true) || []
   const failedTasks = data?.tasks?.filter(t => t.failed === true) || []
 
-  // Force grid layout - ALWAYS show all 4 columns with empty states
+  // grid layout - ALWAYS show all 4 columns with empty states
   const columns = [
     {
       title: '📌 New Tasks',

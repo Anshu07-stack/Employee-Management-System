@@ -35,7 +35,7 @@ const AdminDashboard = ({ changeUser }) => {
           <AllTask />
         </div>
 
-        {/* Extra bottom padding for better scrolling */}
+        {/* Extra padding for better scroll */}
         <div className="h-8"></div>
       </div>
 

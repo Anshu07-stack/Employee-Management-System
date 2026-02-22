@@ -14,7 +14,7 @@ const Login = ({ handleLogin }) => {
   return (
     <div className="min-h-dvh bg-neutral-950 text-white flex flex-col md:flex-row">
       
-      {/* LEFT PANEL - Takes exactly half on mobile */}
+      {/* LEFT PANEL  */}
       <div className="w-full md:w-1/2.5 flex flex-col justify-between p-5 sm:p-10 md:p-8 lg:p-10 bg-neutral-900 md:border-r border-white/10 min-h-[50vh] md:min-h-screen">
         
         <div className="space-y-3 sm:space-y-4">
@@ -45,7 +45,7 @@ const Login = ({ handleLogin }) => {
         </div>
       </div>
 
-      {/* RIGHT PANEL - Takes bottom half on mobile */}
+      {/* RIGHT PANEL - */}
       <div className="w-full md:w-1/2 flex items-center justify-center px-4 py-6 md:p-8 min-h-[50vh] md:min-h-screen">
         
         <div className="w-full max-w-sm space-y-5">

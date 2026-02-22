@@ -20,7 +20,7 @@ const UserSwitcher = ({ setUser, setLoggedInUserData }) => {
   const switchUser = async (role, employeeData = null) => {
     setLoading(true)
     
-    // Simulate loading
+    //  loading
     await new Promise(resolve => setTimeout(resolve, 800))
 
     const loggedInUser = localStorage.getItem('loggedInUser')

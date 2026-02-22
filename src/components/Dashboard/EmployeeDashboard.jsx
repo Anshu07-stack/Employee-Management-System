@@ -19,17 +19,17 @@ const EmployeeDashboard = ({ changeUser, data, setData }) => {
 
   return (
     <div className="h-screen w-full bg-[#0d0c0c] flex flex-col overflow-hidden p-3 sm:p-4">
-      {/* Header - Fixed height */}
+      {/* Header */}
       <div className="shrink-0">
         <Header changeUser={changeUser} data={data} />
       </div>
 
-      {/* Task Numbers - Fixed height */}
+      {/* Task Numbers  */}
       <div className="shrink-0 mt-2">
         <TasklistNumbers data={data} />
       </div>
 
-      {/* Task List - Takes remaining space */}
+      {/* Task List - */}
       <div className="flex-1 min-h-0 mt-3">
         <TaskList data={data} setData={setData} />
       </div>
